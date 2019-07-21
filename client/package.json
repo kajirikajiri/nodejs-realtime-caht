@@ -2,8 +2,5 @@
   "name": "socket-chat",
   "version": "0.0.1",
   "description": "socket.io app",
-  "dependencies": {},
-  "scripts": {
-    "dev": "node index.js"
-  }
+  "dependencies": {}
 }
