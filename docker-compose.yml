@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web: 
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    command: node index.js
+    volumes:
+      - ./client:/usr/app/
+      - web_node_modules:/usr/app/node_modules
+    ports:
+      - '3638:3638'
+volumes:
+  web_node_modules:
+    driver: local
