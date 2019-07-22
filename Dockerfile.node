@@ -1,5 +1,5 @@
 FROM node:10.16.0
 WORKDIR /usr/app
 COPY client/package.json .
-RUN npm i --save express@4.15.2
-COPY ./client .
+RUN npm i
+COPY client .
